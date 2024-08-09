@@ -1,0 +1,293 @@
+:root{
+    --primary: #5DA9E9;
+    --bgDark: rgb(0, 45, 107);
+    --white: rgb(250, 250, 250);
+    --secondary: rgb(0, 59, 50);
+    --bgLight: rgb(27, 81, 186);
+    --pink: rgb(226, 63, 91);
+    --footerBg: rgb(32, 39, 56);
+    --violet: rgb(48, 44, 118);
+    --brown: rgb(178, 116, 0);
+    --footerText: rgb(141, 177, 203);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bgLight);
+    padding: 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: var(--white);
+    margin: 0 0.5rem;
+    text-align: center;
+}
+nav a:hover{
+    color: var(--secondary);
+}
+nav .center{
+    display: flex;
+    justify-content: space-between;
+}
+.left img{
+    width:150px;
+}
+nav .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.right img{
+    width: 30px;
+    height: 30px;
+}
+.right button{
+    height: 30px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+section .banner{
+    display: flex;
+    position: relative;
+    background-color: var(--bgDark);
+    align-items: center;
+    justify-content: left;
+}
+.banner img{
+    padding: 2rem;
+}
+.banner .typo{
+    color: white;
+    margin-bottom: 6rem;
+}
+.banner .typo h1{
+    font-weight: 200;
+}
+.banner .typo p{
+    line-height: 2;
+}
+.bottom{
+    position: absolute;
+    height: 40px;
+    width: 100vw;
+    /* background-color: var(--white); */
+    bottom: 0rem;
+}
+.banner .ads{
+    position: absolute;
+    bottom: -2rem;
+    display: flex;
+    background-color: var(--white);
+    border-radius: 5px;
+    height: 5rem;
+    width: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 3rem;    
+}
+#ad-tag span{
+    color: green;
+    font-weight: bolder;
+}
+#ad span{
+    color: orangered;
+    font-weight: bolder;
+}
+#ad-pp span{
+    color: rgb(226, 63, 91);
+    font-weight: bolder;
+}
+.form{
+    background-color: var(--white);
+    position: absolute;
+    bottom: 0rem;
+    right: 1rem;
+    border-radius: 5px;
+    height: 26rem;
+    width: 32rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.form h1{
+    font-size: 2rem;
+    font-weight: 200;
+}
+.form h1 span{
+    color: var(--pink);
+    line-height: 1.5rem;
+}
+.form .radio{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.form>label input{
+    width: 75%;
+    padding: .5rem;
+    margin: .5rem;
+    border: 0px;
+}
+.form .option select{
+    padding: 0.5rem;
+    margin: .25rem;
+    border: none;
+}
+.form .option label input{
+    width: 40%;
+    padding: .5rem;
+    margin: .25rem;
+    border: none;
+}
+.form .submit{
+    display: flex;
+    /* height: 2.5rem; */
+    align-items: center;
+}
+.form .submit button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 85);
+    color: var(--white);
+    border: none;
+}
+.form .submit img{
+    margin: 0px;
+}
+.form .submit span{
+    color: rgb(255, 0, 85);
+    font-size: x-small;
+}
+.form .text p{
+    font-weight: 100;
+    margin: 0;
+}
+.form .text span{
+    font-size: x-small;
+}
+.form a:hover{
+    color: brown;
+}
+.course{
+    background-color: var(--white);
+}
+.course h2{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 4rem 0rem;
+}
+.course .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.course .course-container{
+    margin: 2rem;
+    background-color: var(--white);
+    height: 35rem;
+    width: 25rem;
+}
+.course-head{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15%;
+    color: white;
+}
+.course-head img{
+    height:40px;
+    width: 40px;
+
+}
+.bd{
+    background-color: var(--bgDark);
+}
+.sd{
+    background-color: var(--bgLight);
+}
+.ml{
+    background-color: violet;
+}
+.md{
+    background-color: orange;
+}
+.course-detail{
+    padding: 1rem;
+    height: 65%;
+    overflow: auto;
+}
+.course-detail .yoe{
+    display: flex;
+    align-items: center;
+}
+.course-detail .yoe span{
+    color: gray;
+    font-size:12px;
+    margin-left: 1rem;
+}
+.course-detail h4{
+    margin-top: 1rem;
+    font-weight: 250;
+    line-height: 1.5;
+}
+.course-detail p{
+    color: gray;
+    font-size: 14px;
+}
+.course-bottom{
+    display: flex;
+    justify-content: space-between;
+    color: var(--bgLight);
+}
+footer{
+    background-color: var(--footerBg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem;
+}
+footer h4{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 2.5;
+}
+footer a{
+    color:#a2b8ee;
+    text-decoration: none;
+    line-height: 1.25;
+}
+footer>div{
+    display: flex;
+    flex-direction: column;
+}
+footer p{
+    color: var(--white);
+}
+footer .one .logo{
+    height: 40px;
+    width: 100px;
+}
+footer .one .int{
+    height: 30px;
+    width: 180px;
+    margin:1rem 0;
+}
